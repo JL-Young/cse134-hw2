@@ -91,22 +91,27 @@ J     \         /._           /        -Y|/ |
         <section>
             <h2>Web Demo</h2>
 
-            <figure>
-                <figcaption>Checkpoint reached</figcaption>
-                <audio
-                    controls
-                    src="files/bonfire.m4a" alt="bonfire sound">
-                </audio>
-            </figure>
+            <section>
+                <h3>Audio, video, and a website</h3>
+                <figure>
+                    <figcaption>Checkpoint reached</figcaption>
+                    <audio
+                        controls
+                        src="files/bonfire.m4a" alt="bonfire sound">
+                    </audio>
+                </figure>
+    
+                <video>
+                    <source src="" type="video/mp4">
+                </video>
+    
+                <label>Useful site for learning html</label>
+                <iframe src="https://democompany.com/" alt="video"></iframe>
+            </section>
 
-            <video>
-                <source src="" type="video/mp4">
-            </video>
-
-            <label>Useful site for learning html</label>
-            <iframe src="https://democompany.com/" alt="video"></iframe><br />
-
-            <label>Choose UCSD's finest college:</label>
+            <section>
+                <h3>The selection game</h3>
+                <label>Choose UCSD's finest college:</label>
             <select>
                 <optgroup label="Revelle">
                     <option>Revelle</option>
@@ -189,15 +194,13 @@ J     \         /._           /        -Y|/ |
                 <img src="files/Revelle_logo.png" alt="Revelle logo">
                 <figcaption>The inevitable conclusion</figcaption>
             </figure>
+        </section>
 
-            <svg
-                viewBox="0 0 6 4"
-                xmlns="http://www.w3.org/2000/svg"
-                stroke="navy"
-                fill="gold">
-                <circle cx="2" cy="2" r="1" />
+        <section>
+            <h3>Misc other tags to use</h3>
+            <svg viewBox="0 0 3 4" xmlns="http://www.w3.org/2000/svg" stroke="navy" fill="gold">
+                <circle cx="1" cy="1" r="1" />
             </svg>
-
 
             <canvas id="blueSquareCanvas" width="200" height="200"></canvas>
             <script>
@@ -206,21 +209,8 @@ J     \         /._           /        -Y|/ |
                 ctx.fillStyle = 'blue';
                 ctx.fillRect(50, 50, 100, 100);
             </script>
-
-            <template id="createStyle">
-                <p>This is a special field I can assign unique styles.</p>
-            </template>
-
-            <div id="container"></div>
-
-            <script>
-                const template = document.getElementById('myTemplate');
-                const container = document.getElementById('container');
-                const templateContent = template.content;
-
-                container.appendChild(templateContent.cloneNode(true));
-            </script>
-
+        </section>
+            
         </section>
     </main>
     <footer>
