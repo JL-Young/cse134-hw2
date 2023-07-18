@@ -200,9 +200,34 @@ J     \         /._           /        -Y|/ |
                 <circle cx="2" cy="2" r="1" />
             </svg>
 
+
             <div>#TODO:</div>
             <span>#TODO:</span>
             <link>
+            <canvas id="testCanvas" width="20" height="20"></canvas>
+            <script>
+                const canvas = document.getElementById('testCanvas');
+                const ctx = canvas.getContext('2d');
+                ctx.fillStyle = 'blue';
+                ctx.fillRect(5, 5, 10, 10);
+            </script>
+
+            <template id="myTemplate">
+                <h1>Welcome to my website!</h1>
+                <p>This is a template example.</p>
+            </template>
+
+            <div id="container"></div>
+
+            <script>
+                // JavaScript code here
+                const template = document.getElementById('myTemplate');
+                const container = document.getElementById('container');
+                const templateContent = template.content;
+
+                container.appendChild(templateContent.cloneNode(true));
+            </script>
+
         </section>
     </main>
     <footer>
