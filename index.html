@@ -18,7 +18,7 @@
                 <li>Bio</li>
                 <li>Web Demo</li>
             </ol>
-        </nav>>
+        </nav>
     </header>
     <main>
         <section>
@@ -39,6 +39,10 @@
         </section>
         
         <hr>
+
+        <picture>
+            <img src="files/collegiate-wushu-2023-medal.jpg" alt="wushu collegiates 2023 medal">
+        </picture>
 
         <aside>
             Fun fact: James was born in the year of the <pre>
@@ -81,10 +85,6 @@ J     \         /._           /        -Y|/ |
         `-.___/   
             </pre>
         </aside>
-
-        <picture>
-            <img src="files/collegiate-wushu-2023-medal.jpg" alt="wushu collegiates 2023 medal">
-        </picture>
 
         <hr>
 
@@ -152,6 +152,9 @@ J     \         /._           /        -Y|/ |
             </textarea>
 
             <label>What's your reson for not choosing Revelle:</label>
+            
+            <button type="button">Press to think</button>
+
             <input list="resons">
             <datalist id="reasons">
                 <option value="misclick">
@@ -159,6 +162,44 @@ J     \         /._           /        -Y|/ |
                 <option value="fears quality education">
             </datalist>
 
+            <table>
+                <caption>Choice Correctness</caption>
+                <th>
+                    <tr>
+                        <th>Chose Revelle</th>
+                        <th>Chose other</th>
+                    </tr>
+                <tbody>
+                    <tr>
+                        <td>Correct!</td>
+                        <td>Incorrect!</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table>
+                <caption>Choice Analysis</caption>
+                <colgroup>
+                    <col>
+                    <col span="3" class="Good">
+                    <col span="1" class="Bad">
+                </colgroup>
+                <tr>
+                    <td></td>
+                    <th scope="col">Chose Revelle</th>
+                    <th scope="col">Chose Warren</th>
+                    <th scope="col">Chose Sixth</th>
+                    <th scope="col">Didn't choose</th>
+                </tr>
+                <tr>
+                    <th scope="row">Result</th>
+                    <td>Naturally</td>
+                    <td>Acceptable</td>
+                    <td>No comment</td>
+                    <td>Go do it</td>
+                </tr>
+            </table>
+            
 
             <div>#TODO:</div>
             <span>#TODO:</span>
