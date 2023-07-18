@@ -190,8 +190,6 @@ J     \         /._           /        -Y|/ |
                 <figcaption>The inevitable conclusion</figcaption>
             </figure>
 
-            <canvas width="12" height="12">Green square that demos the canvas tag</canvas>
-
             <svg
                 viewBox="0 0 6 4"
                 xmlns="http://www.w3.org/2000/svg"
@@ -201,17 +199,16 @@ J     \         /._           /        -Y|/ |
             </svg>
 
 
-            <canvas id="testCanvas" width="20" height="20"></canvas>
+            <canvas id="blueSquareCanvas" width="200" height="200"></canvas>
             <script>
-                const canvas = document.getElementById('testCanvas');
+                const canvas = document.getElementById('blueSquareCanvas');
                 const ctx = canvas.getContext('2d');
                 ctx.fillStyle = 'blue';
-                ctx.fillRect(5, 5, 10, 10);
+                ctx.fillRect(50, 50, 100, 100);
             </script>
 
-            <template id="myTemplate">
-                <h1>Welcome to my website!</h1>
-                <p>This is a template example.</p>
+            <template id="createStyle">
+                <p>This is a special field I can assign unique styles.</p>
             </template>
 
             <div id="container"></div>
